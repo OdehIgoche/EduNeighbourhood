@@ -4,78 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search Teachers</title>
-
+<link rel="stylesheet" href="style.css">
 <style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f7fa;
+    /* TEACHER GRID */
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* MOBILE: 3 columns */
+    gap: 10px;
+    padding: 15px;
 }
 
-header{
-    background:#1e3a8a;
-    color:white;
-    padding:15px;
-    text-align:center;
+/* TEACHER CARD */
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    text-align: center;
 }
 
-.search-box{
-    padding:15px;
+/* PROFILE IMAGE */
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-input{
-    width:100%;
-    padding:12px;
-    border-radius:8px;
-    border:1px solid #ccc;
+/* TEXT */
+.card h3 {
+    font-size: 12px;
+    margin: 5px 0 0;
 }
 
-.teacher-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:12px;
-    padding:15px;
-}
-
-/* CARD */
-.card{
-    background:white;
-    padding:12px;
-    border-radius:12px;
-    display:flex;
-    gap:12px;
-    align-items:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
-}
-
-.card img{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.info h3{
-    margin:0;
-    font-size:16px;
-}
-
-.info p{
-    margin:3px 0;
-    font-size:13px;
-    color:#555;
+.card p {
+    font-size: 11px;
+    color: #555;
+    margin: 2px 0;
 }
 
 /* STARS */
-.stars{
-    color:gold;
-    font-size:14px;
+.stars {
+    font-size: 10px;
+    color: gold;
 }
 
-/* RESPONSIVE */
-@media(min-width:768px){
-    .teacher-grid{
-        grid-template-columns:1fr 1fr;
+/* DESKTOP: 5 COLUMNS */
+@media (min-width: 768px) {
+    .teacher-grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 </style>
@@ -83,15 +60,20 @@ input{
 
 <body>
 
-<header>
+<header class="simple-header">
+    <a href="index.html">← Home</a>
     <h2>Search Teachers</h2>
 </header>
 
-<div class="search-box">
-    <input type="text" placeholder="Search by location (e.g. Yaba)">
-</div>
+<main class="form-box">
 
-<div class="teacher-grid">
+    <input type="text" placeholder="Enter location (e.g. Yaba)">
+    <button>Search</button>
+
+    <div class="results">
+        <!-- Results later -->
+    </div>
+    <div class="teacher-grid">
 
     <!-- 1 -->
     <div class="card">
@@ -207,6 +189,7 @@ input{
     <div class="card"><img src="https://i.pravatar.cc/100?img=20"><div class="info"><h3>Mrs. Ruth John</h3><p>English • Yaba</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
 
 </div>
+</main>
 
 </body>
 </html>
