@@ -50,7 +50,7 @@ nav a {
 
 /* BODY AREA */
 .body-area {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -100,9 +100,6 @@ img {
   height: auto;
 }
 
-.stats{
-    color: #1e3a8a;
-}
 
 .chart-box{
     background: white;
@@ -124,14 +121,7 @@ img {
         display: block;
         margin-bottom: 10px;
     }
-    .body-area{
-        display: flex;
-        flex-direction: column;
-    }
-    .stats{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+    
+  
 
 }

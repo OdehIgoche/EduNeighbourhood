@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard - EduNeighborhood</title>
 <link rel="stylesheet" href="style.css">
+<style>
+    .stats{
+     display: flex;
+    flex-direction: row; /* mobile first */
+    gap: 80px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* MOBILE FIRST RESPONSIVE */
+@media (max-width: 768px) {
+        
+    .stats{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+}
+</style>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -22,17 +48,17 @@
     <div class="stats">
 
         <div class="stat-card">
-            <h3>Students Registered</h3>
+            <h3>🎓 Students Registered</h3>
             <p>830</p>
         </div>
 
         <div class="stat-card">
-            <h3>Teachers Registered</h3>
+            <h3>👨‍🏫 Teachers Registered</h3>
             <p>50</p>
         </div>
 
         <div class="stat-card">
-            <h3>Available Centers</h3>
+            <h3>🏠 Available Centers</h3>
             <p>50</p>
         </div>
 
