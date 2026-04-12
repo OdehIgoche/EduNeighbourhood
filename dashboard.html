@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - EduNeighborhood</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header class="simple-header">
+    <a href="index.html">← Home</a>
+    <h2>Dashboard</h2>
+</header>
+
+<main class="dashboard">
+
+    <!-- STATS -->
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>Students</h3>
+            <p>830</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Teachers</h3>
+            <p>50</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Centers</h3>
+            <p>50</p>
+        </div>
+
+    </div>
+
+    <!-- CHART -->
+    <div class="chart-box">
+        <h3>Students by Class</h3>
+        <canvas id="studentChart"></canvas>
+    </div>
+
+    <!-- LISTS -->
+    <div class="lists">
+
+        <div class="list-box">
+            <h3>Registered Teachers</h3>
+            <ul>
+                <li>Mr. Johnson - Math</li>
+                <li>Mrs. Amina - English</li>
+                <li>Mr. David - Physics</li>
+                <li>Mrs. Chioma - Biology</li>
+                <li>Mr. Musa - Chemistry</li>
+            </ul>
+        </div>
+
+        <div class="list-box">
+            <h3>Registered Students (Sample)</h3>
+            <ul>
+                <li>JSS1 - 120 students</li>
+                <li>JSS2 - 110 students</li>
+                <li>JSS3 - 100 students</li>
+                <li>SS1 - 200 students</li>
+                <li>SS2 - 300 students</li>
+            </ul>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+const ctx = document.getElementById('studentChart');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Primary', 'JSS1', 'JSS2', 'JSS3', 'SS1', 'SS2'],
+        datasets: [{
+            label: 'Students',
+            data: [150, 120, 110, 100, 200, 150],
+            backgroundColor: '#1e3a8a'
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+</script>
+
+</body>
+</html>
