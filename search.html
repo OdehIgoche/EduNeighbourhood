@@ -42,7 +42,34 @@
     color: #555;
     margin: 2px 0;
 }
+/* CLICKABLE CARD */
+.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
 
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+/* IMAGE */
+.card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
 /* STARS */
 .stars {
     font-size: 10px;
