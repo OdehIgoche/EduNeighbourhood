@@ -54,6 +54,8 @@ nav a {
     text-align: center;
 }
 
+
+
 /* SIMPLE HEADER (OTHER PAGES) */
 .simple-header {
     background: #1e3a8a;
@@ -98,6 +100,18 @@ img {
   height: auto;
 }
 
+.stats{
+    color: #1e3a8a;
+}
+
+.chart-box{
+    background: white;
+    color: #1e3a8a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+
 /* MOBILE FIRST RESPONSIVE */
 @media (max-width: 768px) {
     .header {
@@ -110,4 +124,14 @@ img {
         display: block;
         margin-bottom: 10px;
     }
+    .body-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .stats{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
