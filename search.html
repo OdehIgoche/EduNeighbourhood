@@ -4,26 +4,209 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search Teachers</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f7fa;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.search-box{
+    padding:15px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.teacher-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+    padding:15px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:12px;
+    border-radius:12px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.info h3{
+    margin:0;
+    font-size:16px;
+}
+
+.info p{
+    margin:3px 0;
+    font-size:13px;
+    color:#555;
+}
+
+/* STARS */
+.stars{
+    color:gold;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(min-width:768px){
+    .teacher-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header class="simple-header">
-    <a href="index.html">← Home</a>
+<header>
     <h2>Search Teachers</h2>
 </header>
 
-<main class="form-box">
+<div class="search-box">
+    <input type="text" placeholder="Search by location (e.g. Yaba)">
+</div>
 
-    <input type="text" placeholder="Enter location (e.g. Yaba)">
-    <button>Search</button>
+<div class="teacher-grid">
 
-    <div class="results">
-        <!-- Results later -->
+    <!-- 1 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=1">
+        <div class="info">
+            <h3>Mr. John Adams</h3>
+            <p>Mathematics • Yaba</p>
+            <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+        </div>
     </div>
 
-</main>
+    <!-- 2 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=2">
+        <div class="info">
+            <h3>Mrs. Amina Bello</h3>
+            <p>English • Surulere</p>
+            <div class="stars">⭐⭐⭐⭐☆ (4.5)</div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=3">
+        <div class="info">
+            <h3>Mr. David Okoro</h3>
+            <p>Physics • Ikeja</p>
+            <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=4">
+        <div class="info">
+            <h3>Mrs. Chioma Nwosu</h3>
+            <p>Biology • Lekki</p>
+            <div class="stars">⭐⭐⭐⭐☆ (4.7)</div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=5">
+        <div class="info">
+            <h3>Mr. Musa Ibrahim</h3>
+            <p>Chemistry • Yaba</p>
+            <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=6">
+        <div class="info">
+            <h3>Mrs. Grace Peter</h3>
+            <p>Basic Science • Ikeja</p>
+            <div class="stars">⭐⭐⭐⭐☆ (4.3)</div>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=7">
+        <div class="info">
+            <h3>Mr. Samuel Ade</h3>
+            <p>Geography • Surulere</p>
+            <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=8">
+        <div class="info">
+            <h3>Mrs. Esther John</h3>
+            <p>Economics • Yaba</p>
+            <div class="stars">⭐⭐⭐⭐☆ (4.6)</div>
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=9">
+        <div class="info">
+            <h3>Mr. Daniel Obi</h3>
+            <p>ICT • Ikeja</p>
+            <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+        <img src="https://i.pravatar.cc/100?img=10">
+        <div class="info">
+            <h3>Mrs. Linda James</h3>
+            <p>English Lit • Lekki</p>
+            <div class="stars">⭐⭐⭐⭐☆ (4.4)</div>
+        </div>
+    </div>
+
+    <!-- 11–20 (SHORTER LIST) -->
+
+    <div class="card"><img src="https://i.pravatar.cc/100?img=11"><div class="info"><h3>Mr. Kola Ade</h3><p>Math • Yaba</p><div class="stars">⭐⭐⭐⭐⭐</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=12"><div class="info"><h3>Mrs. Funmi Ayo</h3><p>English • Ikeja</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=13"><div class="info"><h3>Mr. Peter John</h3><p>Physics • Surulere</p><div class="stars">⭐⭐⭐⭐⭐</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=14"><div class="info"><h3>Mrs. Blessing Ugo</h3><p>Biology • Yaba</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=15"><div class="info"><h3>Mr. Tunde Bello</h3><p>Chemistry • Ikeja</p><div class="stars">⭐⭐⭐⭐⭐</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=16"><div class="info"><h3>Mrs. Nneka Obi</h3><p>Economics • Lekki</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=17"><div class="info"><h3>Mr. Felix Mark</h3><p>ICT • Yaba</p><div class="stars">⭐⭐⭐⭐⭐</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=18"><div class="info"><h3>Mrs. Joy Daniel</h3><p>Math • Ikeja</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=19"><div class="info"><h3>Mr. Sam Ade</h3><p>Physics • Surulere</p><div class="stars">⭐⭐⭐⭐⭐</div></div></div>
+    <div class="card"><img src="https://i.pravatar.cc/100?img=20"><div class="info"><h3>Mrs. Ruth John</h3><p>English • Yaba</p><div class="stars">⭐⭐⭐⭐☆</div></div></div>
+
+</div>
 
 </body>
 </html>
