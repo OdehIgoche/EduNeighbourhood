@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Profile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* PROFILE CARD */
+.profile {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    margin: 5px 0;
+}
+
+.subject {
+    color: #555;
+    font-size: 14px;
+}
+
+.stars {
+    color: gold;
+    margin: 5px 0;
+}
+
+/* INFO SECTION */
+.info {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+    color: #1e3a8a;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    margin: 15px;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* WHATSAPP STYLE BUTTON */
+.contact {
+    background: #25D366;
+}
+
+/* MOBILE RESPONSIVE */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <a href="search.html">← Back</a>
+    <div>Teacher Profile</div>
+    <div></div>
+</div>
+
+<div class="container">
+
+    <!-- PROFILE -->
+    <div class="profile">
+        <img src="https://i.pravatar.cc/150?img=12" alt="teacher">
+        <h2>Mr. John Adams</h2>
+        <div class="subject">Mathematics Teacher • Yaba</div>
+        <div class="stars">⭐⭐⭐⭐⭐ (5.0)</div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="info">
+        <h3>About Teacher</h3>
+        <p>
+            Experienced mathematics teacher with over 8 years of teaching students
+            in secondary schools. Specializes in WAEC & JSS/SSS preparation.
+        </p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="info">
+        <h3>Experience</h3>
+        <p>✔ 8+ years teaching experience</p>
+        <p>✔ WAEC & NECO specialist</p>
+        <p>✔ Private tutoring expert</p>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="info">
+        <h3>Location</h3>
+        <p>📍 Yaba, Lagos, Nigeria</p>
+    </div>
+
+    <!-- CONTACT -->
+    <a href="#" class="btn contact">
+        💬 Contact on WhatsApp
+    </a>
+
+</div>
+
+</body>
+</html>
